@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gradient: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1;
+}
+body,html{
+    height: 100%;
+}
+
+body{
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.front{
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    
+}
+#cardlogo{
+    /* background-color: aqua; */
+    position: absolute;
+    left: 7%;
+    top: 12%;
+}
+#cardfront:before{
+    box-shadow: inset 1px 1px 5px black;
+}
+
+
+.name{
+ display: flex;
+ align-items: centre;
+ margin-top: 5%;
+ padding: 0 8%;
+ font-size: 80%;
+}
+.textdetails{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 58%;
+    width: 100%;
+    color: white;
+}
+.textdetails h2{
+    padding-left: 8%;
+    font-size: 170%;
+    letter-spacing: 4px;
+}
+.textdetails h3{
+    margin-right: auto;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.textdetails h4{
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.back{
+    position: absolute;
+    top: 59%;
+    left: 15%;
+}
+#cardback:before {
+    box-shadow: 5px 5px 5px black;
+}
+.back h2{
+    position: absolute;
+    top: 45%;
+    font-size: 80%;
+    left: 80%;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.details-input{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 25%;
+    margin-left: 56%;
+    
+}
+.details-input label{
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+#date{
+    width: 20%;
+}
+#date1{
+    width: 20%;
+    margin-left: 2%;
+}
+#number{
+    margin-left: auto;
+}
+#cvv{
+    margin-left: 34%;
+}
+.horizontal{
+    display: flex;
+}
+input{
+    
+    border: 2px solid hsl(270, 3%, 87%);
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    margin-bottom: 5%;
+    padding-left: 0.6rem;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 1px;
+    /* border-image: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1; */
+    
+}
+input::placeholder{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 115%;
+    color: hsl(279, 6%, 55%);
+    opacity: 70%;
+    letter-spacing:1px;
+}
+label{
+    font-size: 80%;
+    text-transform: uppercase;
+}
+button{
+    font-family: 'Space Grotesk', sans-serif;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    height: 3rem;
+    margin-top: 3%;
+    border-radius: 0.5rem;
+    font-size: 105%;
+}
+.warning{
+    display: none;
+}
+
+
